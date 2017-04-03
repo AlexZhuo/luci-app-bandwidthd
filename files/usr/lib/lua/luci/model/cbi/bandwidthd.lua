@@ -13,7 +13,7 @@ else
 	state_msg = "<b><font color=\"red\">" .. translate("Not running") .. "</font></b>"
 end
 
-m=Map("bandwidthd",translate("Bandwidthd"),translate("通过Bandwidthd可以通过图形界面观察某一网段所有IP的流量状况，并且可以绘制图形，弥补OpenWrt不能分IP观察流量的缺陷<br>状态 - ") .. state_msg .. "<br><br>web观察页面：<a href='http://" .. router_ip .. "/bandwidthd'>" .. router_ip .. "bandwidthd</a>")
+m=Map("bandwidthd",translate("Bandwidthd"),translate("通过Bandwidthd可以通过图形界面观察某一网段所有IP的流量状况，并且可以绘制图形，弥补OpenWrt不能分IP观察流量的缺陷<br>状态 - ") .. state_msg .. "<br><br>web观察页面：<a href='http://" .. router_ip .. "/bandwidthd'>http://" .. router_ip .. "/bandwidthd</a>")
 s=m:section(TypedSection,"bandwidthd","")
 s.addremove=false
 s.anonymous=true
